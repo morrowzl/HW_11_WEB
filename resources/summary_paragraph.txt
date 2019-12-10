@@ -1,0 +1,10 @@
+The objective of this project was to determine whether or not there was a relationship between latitude and certain weather parameters. 
+Weather data for a randomly generated list of over 1300 cities was retrieved from the openweathermap.org API for current weather. 
+The dataset was assembled using the Python pandas library and then visualized through matplotlib scatter plots. 
+The scatter plots were used to compare weather parameters with latitude. The parameters of interest were: temperature, humidity, cloudiness, and windspeed. 
+
+This site presents the project's data and findings. 
+The scatter plot and relevant observations for each weather parameter can be viewed on the respective Plots page. 
+The hyperlinked scatter plot thumbnails found on this Landing page will also redirect you to the respective Plots page. 
+The Comparison page presents all four visualizations at once. 
+The data used to generate the visualizations are presented on the corresponding Data page.
