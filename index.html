@@ -10,46 +10,47 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="temperature.html">Tempurature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparison.html">
-            Comparison
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">
-            Data
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hvac.html">
-            White Noise
-          </a>
-        </li>
-      </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temperature.html">Tempurature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">
+                Comparison
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">
+                Data
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hvac.html">
+                White Noise
+              </a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </div>
     </div>
-  </nav>
-  <!-- make bootstrap grid in which to add content items -->
+  </div>
   <div class="container">
-    <!-- make row for landing page content: summary box, visualizations box -->
     <div class="row">
       <div class="col-lg-8">
         <div class="summary_box">
@@ -66,33 +67,33 @@
               The hyperlinked scatter plot thumbnails found on this Landing page will also redirect you to the respective Plots page. 
               The Comparison page presents all four visualizations at once. 
               The data used to generate the visualizations are presented on the corresponding Data page.
-           </p>
+            </p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="visualizations_box">
           <h1>Visualizations</h1>
           <hr>
-          <div class="col-lg-2">
-            <a target="_self" href="temp.png">
-              <img src="resources/visualizations/temp.png" alt="Tempurature Plot" class="img-thumbnail">
-            </a>
-            <br>
-            <a target="_self" href="humidity.html">
-              <img src="resources/visualizations/humidity.png" alt="Humidity Plot" class="img-thumbnail">
-            </a>
-            <br>            
+          <div class="row">
+            <div class="col-lg-6">
+              <a target="_self" href="temp.png">
+                <img src="resources/visualizations/temp.png" alt="Tempurature Plot" class="img-thumbnail">
+              </a>
+              <a target="_self" href="humidity.html">
+                <img src="resources/visualizations/humidity.png" alt="Humidity Plot" class="img-thumbnail">
+              </a>            
+            </div>
           </div>
-          <div class="col-lg-2">
-            <a target="_self" href="cloudiness.html">
-              <img src="resources/visualizations/cloudiness.png" alt="Cloudy Plot" class="img-thumbnail">
-            </a>
-            <br>
-            <a target="_self" href="wind_speed.html">
-              <img src="resources/visualizations/wind_speed.png" alt="Wind Plot" class="img-thumbnail">
-            </a>
-            <br>
-          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <a target="_self" href="cloudiness.html">
+                <img src="resources/visualizations/cloudiness.png" alt="Cloudy Plot" class="img-thumbnail">
+              </a>
+              <a target="_self" href="wind_speed.html">
+                <img src="resources/visualizations/wind_speed.png" alt="Wind Plot" class="img-thumbnail">
+              </a>
+            </div>
+          </div>    
         </div>
       </div>
     </div>
