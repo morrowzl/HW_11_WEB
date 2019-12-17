@@ -10,90 +10,67 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">Latitude</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="temperature.html">Tempurature</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="comparison.html">
-                Comparison
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">
-                Data
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hvac.html">
-                White Noise
-              </a>
-            </li>
-          </ul>
-        </div>
-        </nav>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="visualizations/temperature.html">Tempurature</a>
+            <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+            <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">
+            Comparison
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">
+            Data
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-md-8">
         <div class="summary_box">
-          <h1>Latitude - A Weather Analysis Project</h1>
-          <hr>
+          <h1 class="summary_box_h1">Latitude - A Weather Analysis Project</h1>
+          <hr class="summary_box_hr">
           <p>
-              The objective of this project was to determine whether or not there was a relationship between latitude and certain weather parameters. 
-              Weather data for a randomly generated list of over 1300 cities was retrieved from the openweathermap.org API for current weather. 
-              The dataset was assembled using the Python pandas library and then visualized through matplotlib scatter plots. 
-              The scatter plots were used to compare weather parameters with latitude. The parameters of interest were: temperature, humidity, cloudiness, and windspeed. 
-              
-              This site presents the project's data and findings. 
-              The scatter plot and relevant observations for each weather parameter can be viewed on the respective Plots page. 
-              The hyperlinked scatter plot thumbnails found on this Landing page will also redirect you to the respective Plots page. 
-              The Comparison page presents all four visualizations at once. 
-              The data used to generate the visualizations are presented on the corresponding Data page.
-            </p>
+            The objective of this project was acquire data from an API with Python and then use pandas and matplotlib to massage and analyze the data. The focus of this procedure was to identify how latitude and certain weather parameters might be related. Weather data for a randomly generated list of over 1300 cities was retrieved from the openweathermap.com Current Weather API. The dataset was assembled/massaged using the Python pandas library and then visualized via matplotlib scatter plots. The following weather parameters were investigated: temperature, humidity, cloudiness, and windspeed.
+          </p>
+          <p>
+            This site presents the project's data and findings. A brief analysis of each weather paramter is presented by the corresponding Visualizations page, while the Comparison page presents all four scatter plots together. The data used to generate the scatter plots are presented on the corresponding Data page.
+          </p>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <div class="visualizations_box">
-          <h1>Visualizations</h1>
-          <hr>
-          <div class="row">
-            <div class="col-lg-6">
-              <a target="_self" href="temp.png">
-                <img src="resources/visualizations/temp.png" alt="Tempurature Plot" class="img-thumbnail">
-              </a>
-              <a target="_self" href="humidity.html">
-                <img src="resources/visualizations/humidity.png" alt="Humidity Plot" class="img-thumbnail">
-              </a>            
-            </div>
+          <h3 class="visualizations_box_h3">Visualizations</h3>
+          <hr class="visualizations_box_hr">
+          <div class="plot_thumbnails">            
+            <a target="_self" href="visualizations/temperature.html">
+              <img src="resources/images/temp.png" alt="Tempurature Plot" class="img-thumbnail">
+            </a>
+            <a target="_self" href="visualizations/humidity.html">
+              <img src="resources/images/humidity.png" alt="Humidity Plot" class="img-thumbnail">
+            </a>
+            <a target="_self" href="visualizations/cloudiness.html">
+              <img src="resources/images/cloudiness.png" alt="Cloudy Plot" class="img-thumbnail">
+            </a>
+            <a target="_self" href="visualizations/wind_speed.html">
+              <img src="resources/images/wind_speed.png" alt="Wind Plot" class="img-thumbnail">
+            </a>
           </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <a target="_self" href="cloudiness.html">
-                <img src="resources/visualizations/cloudiness.png" alt="Cloudy Plot" class="img-thumbnail">
-              </a>
-              <a target="_self" href="wind_speed.html">
-                <img src="resources/visualizations/wind_speed.png" alt="Wind Plot" class="img-thumbnail">
-              </a>
-            </div>
-          </div>    
         </div>
       </div>
     </div>
