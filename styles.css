@@ -1,5 +1,31 @@
+a.img-thumbnail {
+  margin: 5px;
+}
+a.nav-link {
+  color: #000000;
+}
+
 body {
-  background-color: rgb(139, 214, 233);
+  background-image: url(/resources/images/rain.jpg);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+th {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.comparison_img {
+  max-width: 400px;
+  height: auto;
 }
 
 .img-thumbnail {
@@ -8,33 +34,96 @@ body {
   height: auto;
 }
 
-.nav-link {
-  color: #000;
+.nav-item {
+  border-color: #ffffff00;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.nav-item {
+.nav-item:hover {
+  background-color: #358bee79;
+  border-color: #adff2f;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.nav-link {
+  background-color: #ffffff00;
+  border-radius: 3px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-item li {
   color: #000000;
 }
 
-.navbar {
-  padding: 10px;
-  margin: 15px;
-  background: #5191fd;
-}
-
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-.navbar li {
+.navbar-brand {
+  border-color: #ffffff00;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  color: #000000;
+  cursor: pointer;
   display: inline-block;
-  padding: 20px;
   margin-right: 10px;
   margin-left: 10px;
-  cursor: pointer;
-  background: #fff;
-  border-radius: 3px;
 }
 
-/* Getting rid of the default link styles here */
-.navbar li a {
-  color: #000;
-  text-decoration: none;
+.navbar-brand:hover {
+  background-color: #358bee79;
+  border-color: #adff2f;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.navbar-light.navbar-nav.nav-link {
+  border-color: #ffffff00;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.summary_box {
+  background-color: #ffffff8e;
+  border-color: #2c3d50;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+  padding: 15px;
+  
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #ffffff85;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #ffffffb6;
+}
+
+.visualizations_box {
+  background-color: #ffffff8e;
+  border-color: #2c3d50;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
 }
